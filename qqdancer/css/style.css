@@ -1,0 +1,163 @@
+body {
+	overflow-x: hidden;
+}
+
+.public-bg {
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+	width: 1920px;
+	height: 1500px;
+	background: url(../images/index-bg.png)no-repeat;
+	background-position: center center;
+}
+
+.container {
+	position: relative;
+	width: 1002px;
+	margin: 0 auto;
+	
+}
+
+.public-main {
+	position: relative;
+}
+
+.public-head-logo {
+	margin-top: 52px;
+	margin-left: 8px;
+	width: 146px;
+	height: 95px;
+	overflow: hidden;
+}
+
+.head-title-text {
+	margin-top: -6px;
+	text-align: center;
+	font-size: 34px;
+	font-weight: bold;
+	color: #440e0f;
+}
+
+.head-title-text .line {
+	display: inline-block;
+	width: 233px;
+	vertical-align: middle;
+	border: 0.1px solid #440e0f;
+}
+
+.head-title-text .txt {
+	margin:0 28px;
+}
+
+.head-title-logo {
+	margin-top: 24px;
+}
+
+.head-title-logo img{
+	margin: 0 77px;
+	width: 842px;
+	height: 121px;
+}
+
+.head-title-time {
+	margin-top: -9px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 392px;
+	height: 42px;
+	text-align: center;
+	background: #681214;
+	border-radius: 25px;
+	
+}
+
+.title-time-text {
+	line-height: 40px;
+	color: #e7d8bc;
+}
+
+.btn1,.btn2 {
+	display: inline-block;
+	margin-top: 18px;
+	width: 261px;
+	height: 71px;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn1 {
+	margin-left: 199px;	
+	background-image: url(../images/btn1.png);
+}
+
+
+
+.btn2 {
+	margin-left: 79px;
+	background-image: url(../images/btn2.png);
+}
+
+.btn-text {
+	line-height: 71px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #244049;
+}
+
+.login {
+	margin-top: 18px;
+	margin-left: 47px;
+	color: #f5e3be;
+	font-size: 12px;
+}
+
+.login a{
+	display: inline;
+	color: #f5e3be;
+}
+
+.box {
+	margin-top: 8px;
+	margin-left: 14px;
+	width: 975px;
+	height: 855px;
+	background-image: url(../images/box.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box-head {
+	position: relative;
+	width: 975px;
+	height: 86px;
+	
+}
+
+.box-head > .box-head-left,.box-head > .box-head-right {
+	position: absolute;
+	margin-top: 18px;	
+	width: 458px;
+	height: 73px;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 73px;
+	color: #b8986d;
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 10px;
+}
+
+.box-head > .box-head-left {
+	margin-left: 20px;
+}
+
+.box-head > .box-head-right {
+	right: 0;
+	margin-right: 22px;
+}
+
+.box-head .box-head-num {
+	color: #430708;
+}

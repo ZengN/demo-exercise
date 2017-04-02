@@ -1,0 +1,31 @@
+body,div,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,form,a,p,textarea,input,img {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+
+ol,ul,li {
+	list-style: none;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+.clearfix:before,.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
