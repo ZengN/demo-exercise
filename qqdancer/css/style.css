@@ -55,7 +55,9 @@
 }
 
 .public-header {
-	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 41px;
 	background-image: url(../images/pulbic-header.jpg);
@@ -65,7 +67,6 @@
 
 .public-footer {
 	position: absolute;
-	*position:static;
 	bottom: 0;
 	width: 100%;
 	height: 108px;
@@ -98,28 +99,8 @@
 	overflow: hidden;
 }
 
-.head-title-text {
-	margin-top: -6px;
-	text-align: center;
-	font-size: 34px;
-	font-weight: bold;
-	letter-spacing: 2px;
-	color: #4b0f11;
-}
-
-.head-title-text .line {
-	display: inline-block;
-	width: 233px;
-	vertical-align: middle;
-	border: 0.1px solid #440e0f;
-}
-
-.head-title-text .txt {
-	margin:0 15px;
-}
-
 .head-title-logo {
-	margin-top: 24px;
+	margin-top: 60px;
 }
 
 .head-title-logo img{
@@ -147,9 +128,11 @@
 	color: #fcf6db;
 }
 
+.btn {
+	position: relative;
+}
+
 .btn1,.btn2 {
-	display: inline-block;
-	margin-top: 18px;
 	width: 264px;
 	height: 75px;
 	text-align: center;
@@ -158,14 +141,15 @@
 }
 
 .btn1 {
+	margin-top: 18px;
 	margin-left: 199px;	
 	background-image: url(../images/btn1.png);
 }
 
-
-
 .btn2 {
-	margin-left: 79px;
+	float: right;
+	*margin-top: 18px;
+	margin-right: 199px;
 	background-image: url(../images/btn2.png);
 }
 
@@ -208,38 +192,41 @@
 .box-head > .box-head-left,.box-head > .box-head-right {
 	position: absolute;
 	margin-top: 18px;	
-	width: 451px;
-	height: 74px;
-	font-size: 30px;
-	font-weight: bold;
-	line-height: 74px;
-	color: #b8986d;
-	text-align: center;
-	background-color: rgba(0,0,0,0.4) !important;
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c000000,endColorstr=#4c000000)\9;
-	border-radius: 10px;
+	width: 458px;
+	height: 86px;
 }
 
 .box-head > .box-head-left {
 	margin-left: 20px;
+	background-image: url(../images/icon1.png);
+	background-repeat: no-repeat;
+	background-position: -6px -404px;
 }
 
 .box-head > .box-head-right {
 	right: 0;
 	margin-right: 22px;
+	background-image: url(../images/icon1.png);
+	background-repeat: no-repeat;
+	background-position: -471px -556px;
 }
 
-.box-head .box-head-num {
-	color: #430708;
-}
-
-.btn-change {
-	color: #f5dda5 !important;
-	width: 458px;
-	height: 86px;
+.btn-change1 {
+	margin-left: 16px !important;
+	margin-top: 15px !important;
+	width: 458px !important;
+	height: 86px !important;
 	background-image: url(../images/icon1.png) !important;
-	background-repeat: no-repeat !important;
-	background-position: -134px -14px !important;
+	background-position: -2px -491px !important;
+}
+
+.btn-change2 {
+	margin-right: 26px !important;
+	margin-top: 15px !important;
+	width: 458px !important;
+	height: 86px !important;
+	background-image: url(../images/icon1.png) !important;
+	background-position: -468px -456px !important;
 }
 
 /*选项1*/
@@ -453,7 +440,7 @@
 }
 
 .dianj > .dianj-left {
-	display: inline-block;
+	display: block;
 	margin-left: 90px;
 	width: 87px;
 	height: 64px;	
@@ -463,9 +450,9 @@
 }
 
 .dianj > .dianj-right {
-	display: inline-block;
-	margin-left: 45px;
-	margin-bottom: 12px;
+	float: right;
+	margin-top: 15px;
+	margin-right: 170px;
 	width: 116px;
 	height: 40px;
 	background-image: url(../images/icon2.png);
@@ -474,13 +461,14 @@
 }
 
 .main2-right-right > .box2 {
+	position: relative;
 	margin-left: -8px;
 	margin-top: 20px;
 	width: 550px;
 }
 
 .box2-pic1, .box2-pic2, .box2-pic3 {
-	display: inline-block;
+	float: left;
 	margin-right: 16px;
 	width: 147px;
 	height: 115px;
@@ -501,6 +489,7 @@
 }
 
 .main2-right-right > .gobtn {
+	float: left;
 	margin-top: 30px;
 	margin-left: -8px;
 	width: 326px;
